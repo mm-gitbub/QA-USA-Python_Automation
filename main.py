@@ -41,8 +41,10 @@ class TestUrbanRoutes:
     # Task 5: Preparing the ice cream order
     def test_order_2_ice_creams(self):
         print("function created for ordering 2 ice creams")
-        for i in range(2):
+        number_of_ice_cream = 2
+        for ice_cream in range(number_of_ice_cream):
             # Add in S8
+            # Adding loop to iterate twice for order_2_ice_cream
             pass
     def test_car_search_model_appears(self):
         # Add in S8
