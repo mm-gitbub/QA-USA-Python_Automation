@@ -139,7 +139,7 @@ class TestUrbanRoute:
             urban_page.order_2_ice_creams()
         urban_page.car_search_model_appears()
         time.sleep(2)
-        print(" The car search has appeared.")
+        print(" The 'car search' has appeared.")
 
     @classmethod
     def teardown_class(cls):

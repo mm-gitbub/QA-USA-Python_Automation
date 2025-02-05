@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+
 class UrbanRoutesPage:
     FROM_LOCATOR = (By.ID, 'from')
     TO_LOCATOR = (By.ID, 'to')

@@ -3,7 +3,7 @@
 
 URBAN_ROUTES_URL = 'https://cnt-1106b067-ad25-46ac-ba36-28707a94adf1.containerhub.tripleten-services.com/'
 
-# The name and the test data as the value for each of these:
+# The name and the test data as the value for each of these mentioned:
 
 ADDRESS_FROM = 'East 2nd Street, 601'
 ADDRESS_TO = '1300 1st St'
