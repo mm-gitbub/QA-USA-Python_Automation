@@ -1,7 +1,7 @@
 # File with constants
 # This constant is used to store the URL from start server button.
 
-URBAN_ROUTES_URL = 'https://cnt-b83e4320-5295-4198-81c9-41dc704f69b0.containerhub.tripleten-services.com/'
+URBAN_ROUTES_URL = 'https://cnt-1106b067-ad25-46ac-ba36-28707a94adf1.containerhub.tripleten-services.com/'
 
 # The name and the test data as the value for each of these:
 

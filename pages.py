@@ -1,11 +1,6 @@
 from selenium.webdriver.common.by import By
-import helpers
-
-# Defining the page class, locators and methods in this class
 
 class UrbanRoutesPage:
-    # Locators as class attributes
-
     FROM_LOCATOR = (By.ID, 'from')
     TO_LOCATOR = (By.ID, 'to')
     CALL_A_TAXI_BUTTON_LOCATOR = (By.XPATH, '(//button[@class = "button round"])')
@@ -29,23 +24,19 @@ class UrbanRoutesPage:
     ORDER_TAXI_BUTTON_LOCATOR =(By.CSS_SELECTOR, 'button.smart-button')
 
     def __init__(self,driver):
-        self.driver = driver # Initialize the driver
+        self.driver = driver
 
     def enter_from_location(self,ADDRESS_FROM):
-        # Enter from address
         self.driver.find_element(*self.FROM_LOCATOR).send_keys(ADDRESS_FROM)
 
     def enter_to_location(self,ADDRESS_TO):
-        # Enter to address
         self.driver.find_element(*self.TO_LOCATOR).send_keys(ADDRESS_TO)
 
     def set_route(self,ADDRESS_FROM,ADDRESS_TO):
-        # Enter From and To address
         self.enter_from_location(ADDRESS_FROM)
         self.enter_to_location(ADDRESS_TO)
 
     def select_plan(self):
-
         self.driver.find_element(*self.CALL_A_TAXI_BUTTON_LOCATOR).click()
         self.driver.find_element(*self.SUPPORTIVE_PLAN_LOCATOR).click()
 
@@ -53,13 +44,11 @@ class UrbanRoutesPage:
         return self.driver.find_element(*self.SUPPORTIVE_PLAN_LOCATOR).text
 
     def fill_phone_number(self,PHONE_NUMBER):
-        # Enter the phone number
         self.driver.find_element(*self.PHONE_NO_BUTTON_LOCATOR).click()
         self.driver.find_element(*self.ENTERING_PHONE_NO_LOCATOR).send_keys(PHONE_NUMBER)
         self.driver.find_element(*self.PHONE_NO_NEXT_BUTTON_LOCATOR).click()
 
     def sms(self,phone_code):
-        # Enter phone code
         self.driver.find_element(*self.ENTERING_CODE_LOCATOR).send_keys(phone_code)
         self.driver.find_element(*self.CODE_PAGE_CONFIRM_BUTTON_LOCATOR).click()
 
