@@ -1,6 +1,6 @@
 Automated tests covering the full process of ordering a taxi. 
 
-The tests should cover:
+The tests covers:
 
 -Setting the address
 
