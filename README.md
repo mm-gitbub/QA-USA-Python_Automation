@@ -1,4 +1,5 @@
-Automated tests covering the full process of ordering a taxi. The tests should cover:
+Automated tests covering the full process of ordering a taxi. 
+The tests should cover:
 -Setting the address
 -Selecting Supportive plan(Tip: don't forget to make an if condition whether this tariff is selected or not. To avoid unnecessary clicks that lead to test failures )
 -Filling in the phone number(Tip: don't forget to use the retrieve_phone_code() method from the helpers.py file to retrieve the sms code)
