@@ -16,4 +16,4 @@ The tests covers:
 
 -Ordering 2 Ice creams
 
--Order a taxi with the ‘Supportive’ tariff. The car search modal window should appear. (Tip: When ordering, don't forget to add a message for the driver)
+-Ordering a taxi with the ‘Supportive’ tariff. The car search modal window will appear. (Note: When ordering a taxi, adding a message for the driver)
